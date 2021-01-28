@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+  <!-- <test name="Test">
+    <classes>
+      <class name="com.volvo.lisaclassic.sanitychecks.POC_LisaMA"/>
+    </classes>
+  </test>  -->
+  
+    <test name="SmokeTest" thread-count="6">
+       <parameter name="appURL" value="http://lisa-server-qa.acps-alpha-r1.srv.volvo.com/lisa-web/" />
+       <parameter name="testDataFileName" value="SmokeTestData.xlsx" />
+        <classes>
+           <class name="com.volvo.lisa.test.Manage_TC">
+             <methods>
+               <include name="TC1_verifyManageScreen" />
+               <include name="TC2_verifyCorrectionsScreen"/>
+               <include name="TC3_verifyStandardPartsScreen" />
+               <include name="TC4_verifySearchScreen" />
+             </methods>
+          </class>
+       <!--             
+          <class name="com.volvo.lisa.test.Corrections_TC">
+             <methods>
+               <include name="TC1_verifyCorrectionsScreen" />               
+             </methods>
+         </class>  --> 
+    </classes>
+  </test>
+</suite>

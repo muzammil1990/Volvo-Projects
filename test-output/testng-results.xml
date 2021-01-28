@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="203614" started-at="2020-10-22T06:29:22Z" finished-at="2020-10-22T06:32:46Z">
+    <groups>
+    </groups>
+    <test name="SmokeTest" duration-ms="203614" started-at="2020-10-22T06:29:22Z" finished-at="2020-10-22T06:32:46Z">
+      <class name="com.volvo.lisa.test.Manage_TC">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:com.volvo.lisa.test.Manage_TC@61832929]" name="initializeDriver" is-config="true" duration-ms="4913" started-at="2020-10-22T11:59:22Z" finished-at="2020-10-22T11:59:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="TC1_verifyManageScreen(java.lang.String, java.lang.String)[pri:0, instance:com.volvo.lisa.test.Manage_TC@61832929]" name="TC1_verifyManageScreen" duration-ms="61797" started-at="2020-10-22T11:59:27Z" finished-at="2020-10-22T12:00:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://lisa-server-qa.acps-alpha-r1.srv.volvo.com/lisa-web/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SmokeTestData.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_verifyManageScreen -->
+        <test-method status="PASS" signature="TC2_verifyCorrectionsScreen(java.lang.String)[pri:0, instance:com.volvo.lisa.test.Manage_TC@61832929]" name="TC2_verifyCorrectionsScreen" duration-ms="47538" started-at="2020-10-22T12:00:29Z" finished-at="2020-10-22T12:01:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SmokeTestData.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC2_verifyCorrectionsScreen -->
+        <test-method status="PASS" signature="TC3_verifyStandardPartsScreen(java.lang.String)[pri:0, instance:com.volvo.lisa.test.Manage_TC@61832929]" name="TC3_verifyStandardPartsScreen" duration-ms="52761" started-at="2020-10-22T12:01:17Z" finished-at="2020-10-22T12:02:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SmokeTestData.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC3_verifyStandardPartsScreen -->
+        <test-method status="PASS" signature="TC4_verifySearchScreen(java.lang.String)[pri:0, instance:com.volvo.lisa.test.Manage_TC@61832929]" name="TC4_verifySearchScreen" duration-ms="36554" started-at="2020-10-22T12:02:09Z" finished-at="2020-10-22T12:02:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SmokeTestData.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC4_verifySearchScreen -->
+      </class> <!-- com.volvo.lisa.test.Manage_TC -->
+    </test> <!-- SmokeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

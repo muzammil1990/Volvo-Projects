@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="SmokeTest(failed)">
+    <parameter name="testDataFileName" value="SmokeTestData.xlsx"/>
+    <parameter name="appURL" value="http://lisa-server-qa.acps-alpha-r1.srv.volvo.com/lisa-web/"/>
+    <classes>
+      <class name="com.volvo.lisa.test.Manage_TC">
+        <methods>
+          <include name="TC4_verifySearchScreen" invocation-numbers="0"/>
+          <include name="initializeDriver"/>
+        </methods>
+      </class> <!-- com.volvo.lisa.test.Manage_TC -->
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

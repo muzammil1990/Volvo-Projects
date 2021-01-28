@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+  <!-- <test name="Test">
+    <classes>
+      <class name="com.volvo.lisaclassic.sanitychecks.POC_LisaMA"/>
+    </classes>
+  </test>  -->
+  
+    <test name="Manage" thread-count="6">
+       <parameter name="appURL" value="http://lisa-server-qa.acps-alpha-r1.srv.volvo.com/lisa-web/" />
+       <parameter name="testDataFileName" value="ManageData.xlsx" />
+        <classes>
+           <class name="com.volvo.lisa.test.Manage_TC">
+             <methods>
+               <include name="TC1_verifyManageScreen" />
+               <exclude name="TC2_loginToLisaClassic" />
+               
+             </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
