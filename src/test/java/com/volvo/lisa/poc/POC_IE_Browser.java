@@ -19,6 +19,8 @@ import org.testng.annotations.Test;
 /**
  * 
  */
+
+// this is to test poc concept
 public class POC_IE_Browser {
 
     WebDriver driver;
